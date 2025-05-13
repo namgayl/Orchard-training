@@ -1,2 +1,71 @@
 # Orchard-training
 training on orchard management
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchard Management Training</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Orchard Management Training</h1>
+        <div style="text-align:right;">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('dz')">རྫོང་ཁ</button>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#modules">Modules</a>
+            <a href="#resources">Downloads</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="lang lang-en">
+            <h2>Welcome</h2>
+            <p>This website provides practical training on orchard management.</p>
+        </section>
+        <section class="lang lang-dz" style="display:none;">
+            <h2>ཕྱིར་ཕེབས་དགའ་བསུ།</h2>
+            <p>འདི་ནི་ལྷུན་ཁང་འཛུགས་སྤྱོད་གཞི་རྟེན་ཞུན་དག་གི་སྦྱོང་བསྡུར་གི་ས་ཚན་རེད།</p>
+        </section>
+
+        <section id="modules">
+            <h2>Training Modules</h2>
+            <ul>
+                <li>Module 1: Site Selection and Preparation</li>
+                <li>Module 2: Planting and Spacing</li>
+                <li>Module 3: Pruning and Canopy Management</li>
+            </ul>
+        </section>
+
+        <section id="resources">
+            <h2>Downloadable PDFs</h2>
+            <ul>
+                <li><a href="pdfs/module1.pdf" download>Module 1 PDF</a></li>
+                <li><a href="pdfs/module2.pdf" download>Module 2 PDF</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: training@orchard.com</p>
+            <p>Phone: +975-12345678</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Orchard Training Program</p>
+    </footer>
+</body>
+</html>
